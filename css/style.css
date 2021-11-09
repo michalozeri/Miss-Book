@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(251, 251, 255);
+}
+
+.app-header {
+    padding: 10px;
+    height: 5vh;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.book-list {
+    margin: 30px 0 0;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.book-preview-container {
+    font-size: 20px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(247, 232, 232, 0.794);
+    text-align: center;
+    color: rgb(37, 37, 37);
+    border-radius: 10px;
+    box-shadow: rgba(59, 59, 59, 0.808) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.book-preview-container h1 {
+    margin: 10px 0;
+}
+
+.red {
+    color: rgb(160, 8, 8);
+    font-weight: bolder;
+}
+
+.green {
+    color: rgb(89, 145, 89);
+    font-weight: bolder;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: rgba(247, 232, 232, 0.794);
+    color: rgb(49, 49, 48);
+    width: 700px;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: rgba(49, 49, 49, 0.931) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    ;
+}
+
+.book-filter {
+    margin: 20px auto 0;
+    text-align: center;
+    background-color: rgb(224, 205, 205);
+    font-size: 1.4rem;
+    height: 50px;
+    padding: 10px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(230, 227, 227);
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    margin: 20px;
+    height: 200px;
+}
