@@ -9,7 +9,8 @@ export const bookService = {
     remove,
     save,
     getById,
-    addReview
+    addReview,
+    getGoogleBooks
 };
 
 const gBooks = [{
@@ -483,6 +484,13 @@ function addReview(bookId, review) {
         })
 }
 
+function getGoogleBooks(param) {
+    const url = `https://www.googleapis.com/books/v1/volumes?printType=books&q=${param}`
+    return axios.get(url)
+        .then(res => {
+            return res.data.items;
+        })
+}
 
 function _createBooks() {
     let books = utilService.loadFromStorage(BOOKS_KEY)
